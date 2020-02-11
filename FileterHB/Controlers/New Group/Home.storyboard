@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Entry Table View Controller-->
+        <scene sceneID="cA3-2t-AxC">
+            <objects>
+                <viewController storyboardIdentifier="First" id="Xxh-uh-DbD" customClass="EntryTableViewController" customModule="FileterHB" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VEX-Tb-tJ4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PbK-Rh-5rw">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y23-aW-Q91">
+                                <rect key="frame" x="291" y="583" width="64" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="jQg-4q-guP"/>
+                                    <constraint firstAttribute="width" constant="64" id="n5Y-QM-rcO"/>
+                                </constraints>
+                                <state key="normal" image="filter-launch"/>
+                                <connections>
+                                    <action selector="tapFilterLaunchButton:" destination="Xxh-uh-DbD" eventType="touchUpInside" id="M5z-KI-am3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="HqH-sD-Cek" firstAttribute="trailing" secondItem="y23-aW-Q91" secondAttribute="trailing" constant="20" id="ANU-wI-dxs"/>
+                            <constraint firstItem="HqH-sD-Cek" firstAttribute="bottom" secondItem="y23-aW-Q91" secondAttribute="bottom" constant="20" id="K8m-4Y-ELo"/>
+                            <constraint firstItem="PbK-Rh-5rw" firstAttribute="top" secondItem="HqH-sD-Cek" secondAttribute="top" id="hO0-N5-79E"/>
+                            <constraint firstItem="HqH-sD-Cek" firstAttribute="trailing" secondItem="PbK-Rh-5rw" secondAttribute="trailing" id="sLk-fZ-Zpb"/>
+                            <constraint firstItem="PbK-Rh-5rw" firstAttribute="leading" secondItem="HqH-sD-Cek" secondAttribute="leading" id="wNy-mq-CiP"/>
+                            <constraint firstItem="HqH-sD-Cek" firstAttribute="bottom" secondItem="PbK-Rh-5rw" secondAttribute="bottom" id="yzm-QQ-JQA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="HqH-sD-Cek"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="1k1-32-KdI"/>
+                    <connections>
+                        <outlet property="tableView" destination="PbK-Rh-5rw" id="vvB-sr-LOd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="14E-TG-Jl0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="592.79999999999995" y="851.42428785607206"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="filter-launch" width="70" height="70"/>
+    </resources>
+</document>
