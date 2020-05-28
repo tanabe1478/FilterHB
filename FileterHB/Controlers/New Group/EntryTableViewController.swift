@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 import XLPagerTabStrip
-
 
 class EntryTableViewController: UIViewController, IndicatorInfoProvider, UITableViewDelegate {
     @IBOutlet weak var tableView: UITableView! {
@@ -18,7 +19,11 @@ class EntryTableViewController: UIViewController, IndicatorInfoProvider, UITable
             tableView.delaysContentTouches = false
         }
     }
+
+    let viewModel: EntryTableViewModel = EntryTableViewModel()
     var datasource = EntrysDataSource()
+    private let disposeBag = DisposeBag()
+
     // ボタンのタイトル
     var itemInfo: IndicatorInfo!
     let refreshControl = UIRefreshControl()
@@ -45,6 +50,12 @@ class EntryTableViewController: UIViewController, IndicatorInfoProvider, UITable
         datasource.getRSS(tableView: tableView, urlList: datasource.urlList!)
         self.navigationController?.isNavigationBarHidden = true
         // Do any additional setup after loading the view.
+
+        //        rx.methodInvoked(#selector(EntryTableViewController.viewDidAppear(_:)))
+        //            .map { _ in }
+        //            .bind(to: viewModel.input.viewDidAppear)
+        //        .disposed(by: disposeBag)
+
     }
 
     // 必須

@@ -11,10 +11,15 @@ target 'FileterHB' do
   pod 'XLPagerTabStrip'
   # 画像の表示、キャッシュ
   pod 'SDWebImage'
+  # Rx
+  pod 'RxSwift', '~> 5'
+  pod 'RxCocoa', '~> 5'
 
   target 'FileterHBTests' do
     inherit! :search_paths
     # Pods for testing
+    pod 'RxBlocking', '~> 5'
+    pod 'RxTest', '~> 5'
   end
 
 end
@@ -26,10 +31,15 @@ target 'Models' do
   # Pods for Models
 
   pod 'RealmSwift'
+  # Rx
+  pod 'RxSwift', '~> 5'
+  pod 'RxCocoa', '~> 5'
 
   target 'ModelsTests' do
     inherit! :search_paths
     # Pods for testing
+    pod 'RxBlocking', '~> 5'
+    pod 'RxTest', '~> 5'
   end
 
 end
