@@ -62,6 +62,8 @@
 		809351901160AE0378979375 /* Pods_FileterHB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A3C2BF298A1478C8CD89EE0 /* Pods_FileterHB.framework */; };
 		856BBF471E1C962C43599651 /* Pods_ModelsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FACA4DAE79224D30B3608BD3 /* Pods_ModelsTests.framework */; };
 		B57567F223F2BADB00BBBD8C /* EntryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57567F123F2BADB00BBBD8C /* EntryModel.swift */; };
+		B5CAA82F24803B1D007B199B /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CAA82E24803B1D007B199B /* UIViewController+Extension.swift */; };
+		B5CAA83024803B1D007B199B /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CAA82E24803B1D007B199B /* UIViewController+Extension.swift */; };
 		B5CB8DEB23F290F1005DA281 /* EntryTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CB8DEA23F290F1005DA281 /* EntryTableViewModel.swift */; };
 		B5CB8DEE23F2AB32005DA281 /* PublishRelay+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CB8DED23F2AB32005DA281 /* PublishRelay+Extension.swift */; };
 /* End PBXBuildFile section */
@@ -179,6 +181,7 @@
 		B561279323EE79C600C5A020 /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B561279423EE79C600C5A020 /* RealmSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B57567F123F2BADB00BBBD8C /* EntryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryModel.swift; sourceTree = "<group>"; };
+		B5CAA82E24803B1D007B199B /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		B5CB8DEA23F290F1005DA281 /* EntryTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryTableViewModel.swift; sourceTree = "<group>"; };
 		B5CB8DED23F2AB32005DA281 /* PublishRelay+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PublishRelay+Extension.swift"; sourceTree = "<group>"; };
 		EFAECA3D1E84603E07361F9B /* Pods-ModelsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModelsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ModelsTests/Pods-ModelsTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -514,6 +517,7 @@
 			isa = PBXGroup;
 			children = (
 				B5CB8DED23F2AB32005DA281 /* PublishRelay+Extension.swift */,
+				B5CAA82E24803B1D007B199B /* UIViewController+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -943,6 +947,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5CAA82F24803B1D007B199B /* UIViewController+Extension.swift in Sources */,
 				5528608421BB8AA900BB6B74 /* BookMarksDataSource.swift in Sources */,
 				55B26B322196F406008E15A4 /* WebViewViewController.swift in Sources */,
 				B5CB8DEB23F290F1005DA281 /* EntryTableViewModel.swift in Sources */,
@@ -973,6 +978,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5CAA83024803B1D007B199B /* UIViewController+Extension.swift in Sources */,
 				5581E79B21919192009855F8 /* FileterHBTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1252,13 +1258,13 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = YN75UE492H;
+				DEVELOPMENT_TEAM = 77M5H986MA;
 				INFOPLIST_FILE = "$(SRCROOT)/FileterHB/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ShowIndicatorDurationAsync.FileterHB;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tanabenobuyuki.hbfilter--explicit--";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1274,13 +1280,13 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = YN75UE492H;
+				DEVELOPMENT_TEAM = 77M5H986MA;
 				INFOPLIST_FILE = "$(SRCROOT)/FileterHB/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ShowIndicatorDurationAsync.FileterHB;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tanabenobuyuki.hbfilter--explicit--";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

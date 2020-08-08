@@ -51,10 +51,14 @@ class EntryTableViewController: UIViewController, IndicatorInfoProvider, UITable
         self.navigationController?.isNavigationBarHidden = true
         // Do any additional setup after loading the view.
 
-        //        rx.methodInvoked(#selector(EntryTableViewController.viewDidAppear(_:)))
-        //            .map { _ in }
-        //            .bind(to: viewModel.input.viewDidAppear)
-        //        .disposed(by: disposeBag)
+        rx.viewDidAppear
+            .subscribe(onNext: {
+                print("hoge")
+                self.viewModel.input.viewDidAppear()
+            })
+            .disposed(by: disposeBag)
+
+        //            .disposed(by: disposeBag)
 
     }
 

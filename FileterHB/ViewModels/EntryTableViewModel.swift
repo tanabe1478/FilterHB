@@ -26,6 +26,9 @@ final class EntryTableViewModel {
 extension EntryTableViewModel {
     // methodInvoked(_:)の返り値にbindする処理
     struct Input {
+        func viewDidAppear() {
+
+        }
     }
 
     struct Output {
